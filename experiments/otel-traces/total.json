@@ -1,0 +1,61 @@
+{
+    "resourceSpans": [
+        {
+            "resource": {
+                "attributes": [
+                    {
+                        "key": "service.name", 
+                        "value": {
+                            "stringValue": "iris.experiments"
+                        }
+                    }
+                ]
+            },
+            "scopeSpans": [
+                {
+                    "scope": {
+                        "name": "iris.experiments.logger",
+                        "version": "1.0.0"
+                    }, 
+                    "spans": [
+                        {
+                            "traceId": "73BA290CB0E1647CB68E5B6A41873A21", 
+                            "spanId": "2B0F293FDE335DDC",
+                            "parentSpanId": "", 
+                            "name": "Some span",
+                            "kind": 2,
+                            "startTimeUnixNano": 1760739900000000000,
+                            "endTimeUnixNano": 1760739930000000000,
+                            "attributes": [],
+                            "events": [
+                                {
+                                    "name": "Some event", 
+                                    "timeUnixNano": 1760739910000000000, 
+                                    "attributes": []
+                                }
+                            ],
+                            "status": {
+                                "message": "All good",
+                                "code": 1
+                            }
+                        }, {
+                            "traceId": "73BA290CB0E1647CB68E5B6A41873A21",
+                            "spanId": "79E4A6F892603997",
+                            "parentSpanId": "2B0F293FDE335DDC",
+                            "name": "Some subspan",
+                            "kind": 2,
+                            "startTimeUnixNano": 1760739915000000000,
+                            "endTimeUnixNano": 1760739925000000000,
+                            "attributes": [],
+                            "events": [],
+                            "status": {
+                                "message": "Error parsing",
+                                "code": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
