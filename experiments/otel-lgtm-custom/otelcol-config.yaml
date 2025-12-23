@@ -23,6 +23,7 @@ extensions:
 
 processors:
   batch:
+    timeout: 1s
 
 exporters:
   otlphttp/metrics:

@@ -10,4 +10,5 @@ In particular, it modifies the Dockerfile to make the build time shorter, and ad
   - storage.trace.wal.ingestion_time_range_slack
 - Prometheus, current setup is also for 1 month old data
   - storage.tsdb.out_of_order_time_window
+  - For metrics with high frequency, set the min step to a sufficient value 
 - OpenTelemetry Collector to remove the batch processor on logs
