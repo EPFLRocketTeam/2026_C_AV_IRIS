@@ -16,8 +16,7 @@ FROM docker.io/redhat/ubi9:9.6-1760340943@sha256:dec374e05cc13ebbc0975c9f521f3db
 
 RUN mkdir /otel-lgtm
 
-COPY run-prometheus.sh \
- grafana-dashboard-red-metrics-classic.json \
+COPY grafana-dashboard-red-metrics-classic.json \
  grafana-dashboard-red-metrics-native.json \
  grafana-dashboard-jvm-metrics.json \
  /otel-lgtm/
@@ -90,6 +89,7 @@ COPY prometheus.yaml \
  pyroscope-config.yaml \
  logging.sh \
  run-grafana.sh \
+ run-prometheus.sh \
  run-loki.sh \
  run-tempo.sh \
  run-pyroscope.sh \

@@ -8,4 +8,6 @@ In particular, it modifies the Dockerfile to make the build time shorter, and ad
 - Tempo to allow for historic data, current setup is for 1 month old data
   - query_frontend.search.query_ingesters_until
   - storage.trace.wal.ingestion_time_range_slack
+- Prometheus, current setup is also for 1 month old data
+  - storage.tsdb.out_of_order_time_window
 - OpenTelemetry Collector to remove the batch processor on logs
